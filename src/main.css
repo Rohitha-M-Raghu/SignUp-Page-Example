@@ -3,11 +3,6 @@ body{
   padding: 0;
 }
 
-span {
-  font-size: 13px;
-  margin-left: 10px;
-}
-
 .container {
   height: 100vh;
   width: 100%;
@@ -55,7 +50,8 @@ span {
 }
 
 .card-back {
-  transform: rotate(180deg);
+  transform: rotateY(180deg);
+  /* display: none; */
 }
 
 .card h2 {
@@ -78,20 +74,6 @@ button {
   outline: none;
   color: #fff;
   cursor: pointer;
-}
-
-
-.card .new-user-button {
-  margin-top: 70px;
-}
-
-.card a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-size: 13px;
-  margin-top: 8px;
 }
 
 .input-box {
@@ -125,4 +107,31 @@ button {
   right: -2px;
   top: -1px;
 }
+
+span {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.card .new-user-button {
+  margin-top: 70px;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
 
