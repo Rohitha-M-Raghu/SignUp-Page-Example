@@ -9,7 +9,7 @@ body{
   font-family: sans-serif;
   background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(/src/images/background-image.jpg);
   background-size: cover;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ body{
 }
 
 .inner-box::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
 }
 
@@ -70,21 +70,32 @@ body{
 button {
   width: 100%;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 35px 0 10px;
   height: 32px;
   font-size: 12px;
   border-radius: 12px;
   box-sizing: border-box;
   outline: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
+  transition: color 0.15s, font-weight 0.15s, background-color 0.15s, opacity 0.15s;
+}
+
+button:hover {
+  color: rgb(0, 0, 50);
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+  opacity: 0.5;
 }
 
 .input-box {
   width: 100%;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   height: 32px;
   margin: 6px 0px;
   border-radius: 2px;
@@ -92,7 +103,7 @@ button {
   box-sizing: border-box;
   outline: none;
   text-align: left;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .submit-button {
@@ -101,7 +112,7 @@ button {
 
 .submit-button::after {
   content: '\27a4';
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   line-height: 32px;
   font-size: 17px;
   height: 32px;
@@ -123,7 +134,7 @@ span {
 }
 
 .card a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   display: block;
   text-align: center;
