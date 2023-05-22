@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="card">
-        <div class="inner-box">
+        <div class="inner-box" id="card">
           <div class="card-front">
             <h2>LOGIN</h2>
             <form action="POST">
@@ -35,12 +35,56 @@
               <button class="submit-button" type="submit">LOGIN</button>
               <input type="checkbox" /><span>Remember Me</span>
             </form>
-            <button type="button" class="new-user-button">I am New Here</button>
+            <button
+              type="button"
+              class="new-user-button"
+              onclick="openRegister()"
+            >
+              I am New Here
+            </button>
             <a href="#">Forgot Password?</a>
           </div>
-          <div class="card-back"></div>
+          <div class="card-back">
+            <h2>SIGN UP</h2>
+            <form action="POST">
+              <input
+                type="text"
+                class="input-box"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="input-box"
+                placeholder="Email Id"
+                required
+              />
+              <input
+                type="password"
+                class="input-box"
+                placeholder="Password"
+                required
+              />
+              <button class="submit-button" type="CREATE ACCOUNT">LOGIN</button>
+              <input type="checkbox" /><span>Remember Me</span>
+            </form>
+            <button type="button" class="new-user-button" onclick="openLogin()">
+              I have an Account
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <script>
+      var card = document.getElementById("card");
+
+      function openRegister() {
+        card.style.transform = "rotateY(-180deg)";
+      }
+
+      function openLogin() {
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
   </body>
 </html>
